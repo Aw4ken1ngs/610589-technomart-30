@@ -12,7 +12,7 @@
     <a href="index.html"><img src="#" alt="Логотип сайта Техномарт"></a>
     <form action="#" method="GET">
       <input type="search" placeholder="Поиск:">
-      <button type="submit"></button>
+      <button type="submit">Поиск</button>
     </form>
     <a href="#">Закладки</a>
     <a href="#">Корзина</a>
@@ -48,75 +48,75 @@
       <li><a href="#">Инструменты</a></li>
       <li>Перфораторы</li>
     </ul>
-    <h1>Перфораторы</h1>
-    <form method="GET" action="https://echo.htmlacademy.ru/">
-      <p>Фильтр:</p>
-      <fieldset>
-        <legend>Цена:</legend>
-        <input type="range" min="0" max="30000">
-        <p><span>0</span>-<span>30000</span></p>
-      </fieldset>
-      <fieldset>
-        <legend>Производители:</legend>
-        <ul>
-          <li>
-            <input type="checkbox" name="bosch" id="filter-bosch" checked>
-            <label for="filter-bosch">bosch</label>
-          </li>
-          <li>
-            <input type="checkbox" name="interskol" id="filter-interskol">
-            <label for="filter-interskol">интерскол</label>
-          </li>
-          <li>
-            <input type="checkbox" name="makita" id="filter-makita" checked>
-            <label for="filter-makita">makita</label>
-          </li>
-          <li>
-            <input type="checkbox" name="dewalt" id="filter-dewalt">
-            <label for="filter-dewalt">dewalt</label>
-          </li>
-          <li>
-            <input type="checkbox" name="hitachi" id="filter-hitachi">
-            <label for="filter-hitachi">hitachi</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Питание:</legend>
-        <ul>
-          <li>
-            <input type="radio" name="poweredby" id="battaries" checked>
-            <label for="battaries">Аккумуляторные</label>
-          </li>
-          <li>
-            <input type="radio" name="poweredby" id="mains">
-            <label for="mains">Сетевые</label>
-          </li>
-        </ul>
-      </fieldset>
-      <button type="submit">Показать</button>
-    </form>
-    <div>
-      <!-- тут будет сортировка товаров-->
-      <h2>Список отсортированного товара</h2>
-    </div>
+    <section class="filter">
+      <h2>Перфораторы</h2>
+      <form method="GET" action="https://echo.htmlacademy.ru/">
+        <p>Фильтр:</p>
+        <fieldset>
+          <legend>Цена:</legend>
+          <input type="range" min="0" max="30000">
+          <p><span>0</span>-<span>30000</span></p>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">bosch</label>
+            </li>
+            <li>
+              <input type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">интерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="poweredby" id="battaries" checked>
+              <label for="battaries">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="poweredby" id="mains">
+              <label for="mains">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
     <section class="goods">
+      <!-- тут будет сортировка товаров-->
+      <h3>Список отсортированного товара</h3>
       <ul>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 6000">
-          <h3>Перфоратор BOSCHBFG 6000</h3>
+          <h4>Перфоратор BOSCHBFG 6000</h4>
           <p class="cross_out"> 30500 Р.</p>
           <p>25500 Р.</p>
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 6000">
-          <h3>Перфоратор BOSCHBFG 6000</h3>
+          <h4>Перфоратор BOSCHBFG 6000</h4>
           <p class="cross_out"> 30500 Р.</p>
           <p>25500 Р.</p>
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 6000">
-          <h3>Перфоратор BOSCHBFG 6000</h3>
+          <h4>Перфоратор BOSCHBFG 6000</h4>
           <a href="#">Купить</a>
           <p>В закладки</p>
           <p class="cross_out"> 30500 Р.</p>
@@ -124,36 +124,36 @@
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 3000">
-          <h3>Перфоратор BOSCHBFG 3000</h3>
+          <h4>Перфоратор BOSCHBFG 3000</h4>
           <p class="cross_out"> 22500 Р.</p>
           <p>15500 Р.</p>
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 6000">
-          <h3>Перфоратор BOSCHBFG 6000</h3>
+          <h4>Перфоратор BOSCHBFG 6000</h4>
           <p class="cross_out"> 30500 Р.</p>
           <p>25500 Р.</p>
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 2000">
-          <h3>Перфоратор BOSCHBFG 2000</h3>
+          <h4>Перфоратор BOSCHBFG 2000</h4>
           <p>12500 Р.</p>
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 3000">
-          <h3>Перфоратор BOSCHBFG 3000</h3>
+          <h4>Перфоратор BOSCHBFG 3000</h4>
           <p class="cross_out"> 22500 Р.</p>
           <p>15500 Р.</p>
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 6000">
-          <h3>Перфоратор BOSCHBFG 6000</h3>
+          <h4>Перфоратор BOSCHBFG 6000</h4>
           <p class="cross_out"> 30500 Р.</p>
           <p>25500 Р.</p>
         </li>
         <li>
           <img src="https://via.placeholder.com/150x100" alt="фото перфоратора BOSCH модель BFG 2000">
-          <h3>Перфоратор BOSCHBFG 2000</h3>
+          <h4>Перфоратор BOSCHBFG 2000</h4>
           <p>12500 Р.</p>
         </li>
       </ul>
