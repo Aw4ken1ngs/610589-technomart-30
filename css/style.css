@@ -1,69 +1,22 @@
-/*font-face*/
-
-@font-face {
-  font-family: "cuprum";
-  src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "cuprumbold";
-  src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "cuprumbolditalic";
-  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "cuprumitalic";
-  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "ptsans";
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ptsansbolt";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* Variables */
 
 :root {
-  --background: #293449;
-  --background-special: #32425C;
-  --basic-red: #EE3643;
-  --basic-green: #63A63E;
-  --basic-grey: #3D546F;
-  --basic-greylight: #C5C5C5;
-  --basic-background: #F1F5F7;
-  --link-footer: #FFDA96;
-  --text-addres: #F3F7F9;
-  --basic-white: #FFFFFF;
-  --basic-black: #000000;
-  --special-yellow: #FFBF47;
-  --special-blue: #3BBCE3;
-  --special-lilac: #DC91D8;
-  --special-greenlight: #8ED78F;
-  --special-yellowlight: #FFD180;
-  --special-basic: #F9F5F0;
-  --success: #5FBB2D;
-  --success-yellow: #FFC047;
+  --background-color: #293449;
+  --background-special-color: #32425C;
+  --background-header-color: #F1F5F7;
+  --background-materials-color: #FFBF47;
+  --background-tools-color: #3BBCE3;
+  --background-technics-color: #DC91D8;
+  --background-sales-color: #8ED78F;
+  --background-delivery-color: #FFC047;
+  --background-sections-color: #F9F5F0;
+  --text-light-color: #FFFFFF;
+  --text-dark-color: #000000;
+  --text-footer-color: #FFD180;
+  --text-addres-color: #F3F7F9;
+  --link-footer-color: #FFDA96;
+  --button-color: #EE3643;
+  --special-button-color: #63A63E;
 }
 
 /* Global */
@@ -76,6 +29,7 @@
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--text-dark-color);
 }
 
 .slider-img {
@@ -83,104 +37,104 @@
   height: auto;
 }
 
-.main-header-logo, .footer-logo {
-  background-color: var(--basic-red);
-}
-
 /*Header*/
 
 .main-header {
-  background-image: url("../img/background-header.png");
-  background-position: 0 0;
+  background-color: var(--background-header-color);
+}
+
+.main-header-logo,
+.footer-logo {
+  background-color: var(--button-color);
 }
 
 .users-panel {
-  background-color: var(--background);
-  color: var(--basic-white);
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-}
-
-.order-link, .button-order {
-  background-color: var(--basic-green);
-}
-
-.bookmarks-link, .basket-link {
-  color: var(--basic-white);
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.order-link, .button {
-  background-color: var(--basic-green);
-  color: var(--basic-white);
   font-weight: 400;
+  color: var(--text-light-color);
+  background-color: var(--background-color);
+}
+
+.bookmarks-link,
+.basket-link {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+  color: var(--text-light-color);
 }
 
 .main-heading {
-  color: var(--basic-red);
   font-size: 16px;
   line-height: 23px;
-  font-weight: 700;
+  font-weight: 400;
   font-style: italic;
   text-align: left;
+  color: var(--button-color);
 }
 
 .header-phone {
-  text-decoration: none;
-  color: var(--basic-red);
-  font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--button-color);
+  border: 3px solid var(--text-light-color);
 }
 
 .header-address {
-  color: var(--background-special);
   font-size: 14px;
   line-height: 24px;
+  color: var(--background-special-color);
 }
 
-.user-navigation a, .user-navigation li {
+.user-navigation a {
   font-size: 21px;
   line-height: 21px;
-  text-decoration: none;
-  color: var(--basic-black);
+  color: var(--text-dark-color);
+}
+
+.user-navigation {
   list-style: none;
 }
 
-.main-navigation ul {
-  background-color: var(--background);
-  color: var(--basic-white);
+.main-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--background-special-color);
+}
+
+.site-navigation {
   list-style: none;
 }
 
 .site-navigation a {
-  color: var(--basic-white);
   text-decoration: none;
+  color: var(--text-light-color);
 }
 
 /*visually-hidden*/
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Promo*/
 
 .promo {
-  color: var(--basic-white);
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
+  color: var(--text-light-color);
 }
 
 .card-list {
@@ -188,58 +142,55 @@
 }
 
 .materials {
-  background-color: var(--special-yellow);
   width: 300px;
   height: 123px;
+  background-color: var(--background-materials-color);
 }
 
 .tools {
-  background-color: var(--special-blue);
   width: 300px;
   height: 123px;
+  background-color: var(--background-tools-color);
 }
 
 .technics {
-  background-color: var(--special-lilac);
   width: 300px;
   height: 123px;
+  background-color: var(--background-technics-color);
 }
 
 .sales {
-  background-color: var(--special-greenlight);
   width: 300px;
   height: 123px;
+  background-color: var(--background-sales-color);
 }
 
 .delivery {
-  background-color: var(--success-yellow);
   width: 300px;
   height: 123px;
+  background-color: var(--background-delivery-color);
 }
 
 /*popular-goods*/
 
-.inner {
-  background-color: var(--special-basic);
-  height: 89px;
-  font-size: 30px;
-  line-height: 30px;
-  color: var(--background-special);
-  text-transform: uppercase;
+.popular-goods {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
 }
 
-.subject-button {
-  text-align: center;
+.inner {
+  font-size: 30px;
+  line-height: 30px;
+  height: 89px;
+  text-transform: uppercase;
+  color: var(--background-special-color);
+  background-color: var(--background-sections-color);
 }
 
 .popular-goods-list {
   list-style: none;
-}
-
-.goods-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
 }
 
 .cross-out {
@@ -252,19 +203,17 @@
 
 /*Service*/
 
-.service, .service p {
-  font-family: "ptsans";
-  background-color: var(--basic-background);
-  color: var(--basic-black);
+.service {
+  font-size: 30px;
+  line-height: 30px;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--background-header-color);
 }
 
 .service-title {
-  font-family: inherit;
-  font-size: 30px;
-  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-dark-color);
 }
 
 .service-menu-list {
@@ -274,9 +223,9 @@
   list-style: none;
 }
 
-.service-menu-item a {
+.service-menu-list a {
   text-decoration: none;
-  color: var(--background-special);
+  color: var(--text-light-color);
 }
 
 .service-info-list {
@@ -284,20 +233,11 @@
 }
 
 .service-info-title {
-  color: var(--background-special);
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--background-special-color);
 }
 
 /*About*/
-
-.about p {
-  font-family: "ptsans";
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-}
 
 .about-title {
   font-size: 30px;
@@ -306,69 +246,95 @@
 }
 
 .transport-companies {
-  list-style: none;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 /*footer*/
 
 .main-footer {
-  background-color: var(--background-special);
   font-size: 18px;
   line-height: 24px;
+  color: var(--background-header-color);
+  background-color: var(--background-special-color);
 }
 
-.footer-phone, .footer-addres {
+.footer-phone,
+.footer-address {
   color: var(--text-addres);
   text-decoration: none;
 }
 
-.footer-navigation li, .footer-navigation a {
+.footer-navigation,
+.footer-site-navigation {
   list-style: none;
-  text-decoration: none;
-  color: var(--basic-background);
 }
 
-.footer-site-navigation a, .footer-site-navigation li {
+.footer-navigation a {
   text-decoration: none;
-  list-style: none;
-  color: var(--link-footer);
+  color: var(--background-header-color);
+}
+
+.footer-site-navigation a {
+  text-decoration: none;
+  color: var(--text-footer-color);
 }
 
 .social-footer {
-  background-color: var(--background);
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
+  background-color: var(--background-color);
 }
 
 .social-icon {
   list-style: none;
 }
 
-.mail, .footer-copyright {
-  color: var(--special-yellowlight);
+.mail,
+.footer-copyright {
+  color: var(--text-footer-color);
   text-decoration: none;
 }
 
 /*Button*/
 
 .button {
-  background-color: var(--basic-red);
-  color: var(--basic-white);
+  background-color: var(--button-color);
+  color: var(--text-light-color);
   vertical-align: middle;
   border: none;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-order {
+  background-color: var(--special-button-color);
+}
+
+.button-login,
+.button-registration {
+  text-transform: none;
+  background-color: var(--text-light-color);
 }
 
 .card-item-button {
-  background-color: var(--basic-white);
   text-decoration: none;
-  color: inherit;
+  text-transform: uppercase;
+  opacity: 0.3;
+  background-color: var(--text-light-color);
 }
 
-.button-login, .button-registration {
-  background-color: var(--basic-white);
+.inner-button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/*text*/
+
+.text-info {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
