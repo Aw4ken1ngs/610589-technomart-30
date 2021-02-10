@@ -10,6 +10,7 @@
   --background-sales-color: #8ED78F;
   --background-delivery-color: #FFC047;
   --background-sections-color: #F9F5F0;
+  --background-filter-color: #F7F3EC;
   --text-light-color: #FFFFFF;
   --text-dark-color: #000000;
   --text-footer-color: #FFD180;
@@ -17,6 +18,7 @@
   --link-footer-color: #FFDA96;
   --button-color: #EE3643;
   --special-button-color: #63A63E;
+  --border-color: #E5E5E5;
 }
 
 /* Global */
@@ -25,7 +27,7 @@
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -35,6 +37,17 @@
 .slider-img {
   max-width: 100%;
   height: auto;
+}
+
+.page-body-catalog {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--text-dark-color);
 }
 
 /*Header*/
@@ -141,46 +154,48 @@
   list-style: none;
 }
 
-.materials {
+.card-item-materials {
   width: 300px;
   height: 123px;
   background-color: var(--background-materials-color);
 }
 
-.tools {
+.card-item-tools {
   width: 300px;
   height: 123px;
   background-color: var(--background-tools-color);
 }
 
-.technics {
+.card-item-technics {
   width: 300px;
   height: 123px;
   background-color: var(--background-technics-color);
 }
 
-.sales {
+.card-item-sales {
   width: 300px;
   height: 123px;
   background-color: var(--background-sales-color);
 }
 
-.delivery {
+.card-item-delivery {
   width: 300px;
   height: 123px;
   background-color: var(--background-delivery-color);
 }
 
-/*popular-goods*/
+/*goods*/
 
-.popular-goods {
-  font-family: "PT Sans", Arial, sans-serif;
+.popular-goods,
+.goods {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
 }
 
-.inner {
+.inner-popular-goods,
+.inner-manufacturers {
   font-size: 30px;
   line-height: 30px;
   height: 89px;
@@ -189,7 +204,8 @@
   background-color: var(--background-sections-color);
 }
 
-.popular-goods-list {
+.popular-goods-list,
+.goods-list {
   list-style: none;
 }
 
@@ -199,6 +215,11 @@
 
 .manufacturers-item {
   list-style: none;
+}
+
+.goods-item,
+.popular-goods-item {
+  border: 1px solid var(--border-color);
 }
 
 /*Service*/
@@ -240,6 +261,7 @@
 /*About*/
 
 .about-title {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -249,6 +271,10 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.about_product {
+  background-color: var(--background-header-color);
 }
 
 /*footer*/
@@ -331,10 +357,86 @@
   line-height: 18px;
 }
 
+.button-selected {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid var(--border-color);
+  background-color: var(--text-light-color);
+}
+
 /*text*/
 
 .text-info {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+/*breadcrumbs*/
+
+.breadcrumbs-list {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.breadcrumbs-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*catalog*/
+
+/*filter block*/
+
+.filter-title {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--background-filter-color);
+}
+
+.category-title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-item {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+/*title catalog*/
+
+.page-catalog-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--background-special-color);
+  background-color: var(--background-header-color);
+}
+
+/*pagination*/
+
+.pagination-list {
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.pagination-item a {
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  color: var(--text-dark-color);
 }
