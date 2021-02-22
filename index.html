@@ -24,9 +24,8 @@
       <div class="users-panel">
         <a class="main-header-logo"><img src="img/logo-technomart.svg" width="108" height="18"
             alt="Логотип сайта Техномарт"></a>
-        <form action="#" method="GET">
+        <form class="form" action="#" method="GET">
           <input class="search" type="search" placeholder="Поиск:">
-          <button type="submit"></button>
         </form>
         <a class="bookmarks-link" href="#">Закладки</a>
         <a class="basket-link" href="#">Корзина</a>
@@ -66,37 +65,39 @@
     <h2 class="visually-hidden">Главная страница интернет-магазина "Техномарт"</h2>
     <section class="promo">
       <h3 class="visually-hidden">Товары и услуги</h3>
-      <div class="grid-promo">
-        <div class="grid-promo-materials">
+      <ul class="list-product-promo">
+        <li class="item-promo-materials">
           <h4>Материалы</h4>
           <a class="grid-promo-button" href="#">На любой вкус</a>
           <img src="#" alt="">
-        </div>
-        <div class="grid-promo-tools">
+        </li>
+        <li class="item-promo-tools">
           <h4>Инструменты</h4>
           <a class="grid-promo-button" href="#">На все случаи</a>
           <img src="#" alt="">
-        </div>
-        <div class="grid-promo-technics">
+        </li>
+        <li class="item-promo-technics">
           <h4>Техника</h4>
           <a class="grid-promo-button" href="#">Для стройки</a>
           <img src="#" alt="">
-        </div>
-        <div class="grid-promo-sales">
+        </li>
+      </ul>
+      <ul class="list-services-promo">
+        <li class="item-promo-sales">
           <h4>Скидки 50%</h4>
           <a class="grid-promo-button" href="#">На 350 товаров</a>
           <img src="#" alt="">
-        </div>
-        <div class="grid-promo-delivery">
+        </li>
+        <li class="item-promo-delivery">
           <h4>Доставка</h4>
           <a class="grid-promo-button" href="#">Бесплатно</a>
           <img src="#" alt="">
-        </div>
-        <div class="slider">
-          <!-- Туточки будет слайдер-->
-          <img class="slider-img" src="img/slider-main.jpg" width="620" height="266"
-            alt="Мужчина с перфоратором bosch в руках">
-        </div>
+        </li>
+      </ul>
+      <div class="slider">
+        <!-- Туточки будет слайдер-->
+        <img class="slider-img" src="img/slider-main.jpg" width="620" height="266"
+          alt="Мужчина с перфоратором bosch в руках">
       </div>
     </section>
     <section class="popular-goods">
@@ -254,14 +255,16 @@
           <li><a href="#">facebook</a></li>
           <li><a href="#">instagram</a></li>
         </ul>
-        <p>
-          Обратная связь:
-          <a class="mail" href="mail.htmlacademy.ru">mail.htmlacademy.ru</a>
-        </p>
-        <p>
-          Разработано-
-          <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
+        <div class="contacts-footer">
+          <p>
+            Обратная связь:
+            <a class="mail" href="mail.htmlacademy.ru">mail.htmlacademy.ru</a>
+          </p>
+          <p>
+            Разработано-
+            <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
