@@ -28,8 +28,8 @@
           <input class="search" type="search" placeholder="Поиск:">
         </form>
         <a class="bookmarks-link" href="#">Закладки</a>
-        <a class="basket-link" href="#">Корзина</a>
-        <a class="button-order button" href="#">Оформить заказ</a>
+        <a class="basket-link" href="#">Корзина: 0</a>
+        <a class="button-order" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="header-info">
@@ -67,36 +67,49 @@
       <h3 class="visually-hidden">Товары и услуги</h3>
       <ul class="list-product-promo">
         <li class="item-promo-materials">
+          <p class="new">new</p>
           <h4>Материалы</h4>
-          <a class="grid-promo-button" href="#">На любой вкус</a>
-          <img src="#" alt="">
+          <a class="promo-button button" href="#">На любой вкус</a>
         </li>
         <li class="item-promo-tools">
           <h4>Инструменты</h4>
-          <a class="grid-promo-button" href="#">На все случаи</a>
-          <img src="#" alt="">
+          <a class="promo-button button" href="#">На все случаи</a>
         </li>
         <li class="item-promo-technics">
           <h4>Техника</h4>
-          <a class="grid-promo-button" href="#">Для стройки</a>
-          <img src="#" alt="">
+          <a class="promo-button button" href="#">Для стройки</a>
         </li>
         <li class="item-promo-sales">
           <h4>Скидки 50%</h4>
-          <a class="grid-promo-button" href="#">На 350 товаров</a>
-          <img src="#" alt="">
+          <a class="promo-button button" href="#">На 350 товаров</a>
         </li>
         <li class="item-promo-delivery">
           <h4>Доставка</h4>
-          <a class="grid-promo-button" href="#">Бесплатно</a>
-          <img src="#" alt="">
+          <a class="promo-button button" href="#">Бесплатно</a>
         </li>
       </ul>
-      <div class="slider">
-        <!-- Туточки будет слайдер-->
-        <img class="slider-img" src="img/slider-main.jpg" width="620" height="266"
-          alt="Мужчина с перфоратором bosch в руках">
-      </div>
+      <section class="slider">
+        <ul class="slider-list">
+          <li class="slider-item slide slide-current">
+            <h4 class="slide-title">
+              Перфораторы
+            </h4>
+            <p>Настоящие мужские игрушки</p>
+            <a class=" button slide-button" href="#">Открыть каталог</a>
+          </li>
+          <li class="slider-item slide">
+            <h4 class="slide-title">
+              Дрели
+            </h4>
+            <p>Соседям на радость!</p>
+            <a class="button slide-button" href="#">Открыть каталог</a>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="current" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+        </div>
+      </section>
     </section>
     <section class="popular-goods">
       <div class="inner-popular-goods">
@@ -105,28 +118,38 @@
       </div>
       <ul class="popular-goods-list">
         <li class="popular-goods-item">
-          <img src="img/bosch-9000.jpg" width="184" height="164" alt="фото перфоратора BOSCH модель BFG 9000">
+          <div class="goods-img">
+            <img src="img/bosch-9000.jpg" width="184" height="164" alt="фото перфоратора BOSCH модель BFG 9000">
+          </div>
           <h4 class="goods-name">Перфоратор BOSCHBFG 9000</h4>
           <p class="cross-out"> 32500 Р.</p>
-          <p class="button button-price">25500 Р.</p>
+          <p class="button-price">25500 Р.</p>
         </li>
         <li class="popular-goods-item">
-          <img src="img/bosch-3000.jpg" width="127" height="112" alt="фото перфоратора BOSCH модель BFG 3000">
+          <p class="new">new</p>
+          <div class="goods-img">
+            <img src="img/bosch-3000.jpg" width="127" height="112" alt="фото перфоратора BOSCH модель BFG 3000">
+          </div>
           <h4 class="goods-name">Перфоратор BOSCHBFG 3000</h4>
           <p class="cross-out"> 22500 Р.</p>
-          <p class="button button-price">15500 Р.</p>
+          <p class="button-price">15500 Р.</p>
         </li>
         <li class="popular-goods-item">
-          <img src="img/bosch-6000.jpg" width="144" height="128" alt="фото перфоратора BOSCH модель BFG 6000">
+          <div class="goods-img">
+            <img src="img/bosch-6000.jpg" width="144" height="128" alt="фото перфоратора BOSCH модель BFG 6000">
+          </div>
           <h4 class="goods-name">Перфоратор BOSCHBFG 6000</h4>
           <p class="cross-out"> 30500 Р.</p>
-          <p class="button button-price">25500 Р.</p>
+          <p class="button-price">25500 Р.</p>
         </li>
         <li class="popular-goods-item">
-          <img src="img/bosch-2000.jpg" width="127" height="112" alt="фото перфоратора BOSCH модель BFG 2000">
+          <p class="new">new</p>
+          <div class="goods-img">
+            <img src="img/bosch-2000.jpg" width="127" height="112" alt="фото перфоратора BOSCH модель BFG 2000">
+          </div>
           <h4 class="goods-name">Перфоратор BOSCHBFG 2000</h4>
           <p class="cross-out"> 22500 Р.</p>
-          <p class="button button-price">12500 Р.</p>
+          <p class="button-price">12500 Р.</p>
         </li>
       </ul>
     </section>
@@ -164,57 +187,66 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-        <ul class="service-menu-list">
+        <!--<ul class="service-menu-list">
           <li class="service-menu-item"><a href="#">Гарантия</a></li>
           <li class="service-menu-item"><a href="#">Доставка</a></li>
           <li class="service-menu-item"><a href="#">Кредит</a></li>
-        </ul>
-        <ul class="service-info-list">
-          <li>
-            <h4 class="service-info-title">Доставка</h4>
-            <p class="text-info">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,
-              поднимая его на ваш этаж!</p>
-          </li>
-          <li>
-            <h4 class="service-info-title">Гарантия</h4>
-            <p class="text-info">Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей
-              гарантии. Мы обменяем сгоревший товар на новый.
-              Дом уж восстановите как-нибудь сами.</p>
-          </li>
-          <li>
-            <h4 class="service-info-title">Кредит</h4>
-            <p class="text-info">Залезть в долговую яму стало проще!
-              Кредитные консультанты придут вам на помощь.</p>
-            <a class="button" href="#">Отправить заявку</a>
-          </li>
-        </ul>
+        </ul>-->
+        <div class="service-slider">
+          <div class="service-control">
+            <button type="button">Доставка</button>
+            <button type="button">Гарантия</button>
+            <button class="current" type="button">Кредит</button>
+          </div>
+          <ul class="service-info-list" >
+            <li class="service-info-item service-delivery ">
+              <h4 class="service-info-title">Доставка</h4>
+              <p class="text-info">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!</p>
+            </li>
+            <li class="service-info-item service-guarantee">
+              <h4 class="service-info-title">Гарантия</h4>
+              <p class="text-info">Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей
+                гарантии. Мы обменяем сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.</p>
+            </li>
+            <li class="service-info-item service-credit item-current">
+              <h4 class="service-info-title">Кредит</h4>
+              <p class="text-info">Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.</p>
+              <a class="button service-button" href="#">Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
     <div class="about-block">
       <section class="about">
         <h3 class="visually-hidden">Преимущества компании Техномарт</h3>
         <h4 class="about-title">Компания "Техномарт"</h4>
-        <p class="text-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-          строительства не оставит
-          равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="text-info">Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="transport-companies">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <div class="block-info">
+          <p class="text-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+            строительства не оставит
+            равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="text-info">Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:</p>
+        </div>
+        <ul class="transport-companies-item">
+          <li class="transport-companies-list">Деловые линии</li>
+          <li class="transport-companies-list">Автотрейдинг</li>
+          <li class="transport-companies-list">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href="#">Подробнее о компании</a>
+        <a class="button button-about" href="#">Подробнее о компании</a>
       </section>
       <section class="contacts">
         <h3 class="about-title">Контакты</h3>
         <p class="text-info">Вы можете забрать товар сами,
           заехав в наш офис:</p>
         <img src="img/map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б Конюшенная, д. 19/8">
-        <a class="button" href="#">Заблудились? Напишите нам!</a>
+        <a class="button button-contacts" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
