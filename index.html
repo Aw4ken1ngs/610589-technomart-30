@@ -193,7 +193,7 @@
             <li><button type="button">Гарантия</button></li>
             <li><button class="current" type="button">Кредит</button></li>
           </ul>
-          <ul class="service-info-list" >
+          <ul class="service-info-list">
             <li class="service-info-item service-delivery ">
               <h4 class="service-info-title">Доставка</h4>
               <p class="text-info">Мы с удовольствием доставим ваш товар прямо
@@ -244,6 +244,44 @@
         <a class="button button-contacts" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
+    <section class="popup popup-contact-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="#" method="post">
+        <div class="contact-us-container">
+          <fieldset>
+            <legend class="visually-hidden">Напишите нам</legend>
+            <div class="text-field-wrap">
+              <p class="flex-wrap">
+                <label for="contact-us-name">Ваше имя:</label>
+                <input class="popup-text-field text-field-small" type="text" id="contact-us-name" name="name"
+                  placeholder="Имя Фамилия">
+              </p>
+              <p class="flex-wrap">
+                <label for="contact-us-email">Ваш e-mail:</label>
+                <input class="popup-text-field text-field-small" type="email" id="contact-us-email" name="email"
+                  placeholder="email@example.com">
+              </p>
+            </div>
+            <p class="flex-wrap">
+              <label for="contact-us-letter">Текст письма:</label>
+              <textarea class="popup-text-field text-field-big" id="contact-us-letter" name="letter"
+                placeholder="В свободной форме"></textarea>
+            </p>
+          </fieldset>
+        </div>
+        <div class="popup-submit-background">
+          <input class="button button-popup" type="submit" name="submit-contact-us" value="Отправить">
+        </div>
+        </div>
+      </form>
+      <span class="popup-cross popup-close" aria-label="Закрыть форму"></span>
+    </section>
+    <section class="popup popup-map">
+      <h3 class="visually-hidden">Как до нас добраться</h3>
+      <img width="943" height="449" src="img/map-modal.png" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </a>
+      <span class="popup-cross popup-close" aria-label="Закрыть карту"></span>
+    </section>
   </main>
 
   <footer class="main-footer">
