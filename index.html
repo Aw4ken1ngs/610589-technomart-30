@@ -25,7 +25,7 @@
         <a class="main-header-logo"><img src="img/logo-technomart.svg" width="108" height="18"
             alt="Логотип сайта Техномарт"></a>
         <form class="form" action="#" method="GET">
-          <input class="search" type="search" placeholder="Поиск:">
+          <input class="search" type="search" placeholder="Поиск:" tabindex="disabled">
         </form>
         <a class="bookmarks-link" href="#">Закладки</a>
         <a class="basket-link" href="#">Корзина: 0</a>
@@ -187,8 +187,8 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
-        <div class="slider-2">
-          <ul class="slider-2-control">
+        <div class="slider-service">
+          <ul class="slider-service-control">
             <li><button type="button">Доставка</button></li>
             <li><button type="button">Гарантия</button></li>
             <li><button class="current" type="button">Кредит</button></li>
@@ -252,18 +252,18 @@
             <legend class="visually-hidden">Напишите нам</legend>
             <div class="text-field-wrap">
               <p class="flex-wrap">
-                <label for="contact-us-name">Ваше имя:</label>
-                <input class="popup-text-field text-field-small" type="text" id="contact-us-name" name="name"
+                <label for="contact-us-name" tabindex="0">Ваше имя:</label>
+                <input class="popup-text-field text-field-small" type="text" id="contact-us-name" name="name" tabindex="disabled"
                   placeholder="Имя Фамилия">
               </p>
               <p class="flex-wrap">
-                <label for="contact-us-email">Ваш e-mail:</label>
+                <label for="contact-us-email" tabindex="0">Ваш e-mail:</label>
                 <input class="popup-text-field text-field-small" type="email" id="contact-us-email" name="email"
-                  placeholder="email@example.com">
+                  placeholder="email@example.com" tabindex="disabled">
               </p>
             </div>
             <p class="flex-wrap">
-              <label for="contact-us-letter">Текст письма:</label>
+              <label for="contact-us-letter" tabindex="0">Текст письма:</label>
               <textarea class="popup-text-field text-field-big" id="contact-us-letter" name="letter"
                 placeholder="В свободной форме"></textarea>
             </p>
